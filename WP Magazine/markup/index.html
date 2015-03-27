@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>News Reporter</title>
+	<link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/pictureSlides-jquery-2.0.js" ></script>
+	<script type="text/javascript" src="js/clear-form-fields.js" ></script>
+	<script type="text/javascript">
+		jQuery.PictureSlides.set({
+			// Switches to decide what features to use
+			useFadingIn : true,
+			useFadingOut : true,
+			useFadeWhenNotSlideshow : true,
+			useFadeForSlideshow : true,
+			useDimBackgroundForSlideshow : true,
+			loopSlideshow : false,
+			usePreloading : true,
+			useAltAsTooltip : true,
+			useTextAsTooltip : false,
+	
+			// Fading settings
+			fadeTime : 500, // Milliseconds	
+			timeForSlideInSlideshow : 2000, // Milliseconds
+	
+			// At page load
+			startIndex : 1,	
+			startSlideShowFromBeginning : true,
+			startSlideshowAtLoad : false,
+			dimBackgroundAtLoad : false,
+	
+			// Large images to use and thumbnail settings
+			images : [
+				{
+					image : "images/1.jpg", 
+					alt : "Picture 1",
+					text : "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus."
+				},
+				{                                  
+					image : "images/2.jpg", 
+					alt : "Picture 2",
+					text : "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. 2",
+					url : "http://robertnyman.com"
+				},
+				{                                  
+					image : "images/3.jpg", 
+					alt : "Picture 3",
+					text : "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. 3",
+					url : "http://456bereastreet.com"
+				},
+				{                                  
+					image : "images/4.jpg", 
+					alt : "Picture 4",
+					text : "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus. 4",
+					url : "http://456bereastreet.com"
+				} // NOTE! No comma after the last object
+			],
+			thumbnailActivationEvent : "click",
+	
+			// Classes of HTML elements to use
+			mainImageClass : "picture-slides-image", // Mandatory
+			imageLinkClass : "picture-slides-image-link",
+			fadeContainerClass : "picture-slides-fade-container",
+			imageTextContainerClass : "picture-slides-image-text",
+			previousLinkClass : "picture-slides-previous-image",
+			nextLinkClass : "picture-slides-next-image",
+			imageCounterClass : "picture-slides-image-counter",
+			startSlideShowClass : "picture-slides-start-slideshow",
+			stopSlideShowClass : "picture-slides-stop-slideshow",
+			thumbnailContainerClass: "picture-slides-thumbnails",
+			dimBackgroundOverlayClass : "picture-slides-dim-overlay"
+		});
+	</script>
+	<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
+</head>
+<body>
+	<div class="bg">
+		<div id="wrapper">
+			<div id="header">
+				<div class="logo-holder">
+					<h1 class="logo"><a href="#">The news reporter</a></h1>
+					<ul class="nav-top">						<li><a href="#">Home</a></li>						<li><a href="#">About Us</a></li>						<li><a href="#">Contact Us</a></li>						<li><a href="#">Subscribe</a></li>						<li><a href="#">Login</a></li>					</ul>
+					<div class="col-r">
+						<ul class="social">							<li>
+								<a href="#"><img src="images/twitter.png" width="24" height="24" alt="twitter" /></a>
+							</li>							<li>
+								<a href="#"><img src="images/fb.png" width="24" height="24" alt="facebook" /></a>
+							</li>							<li>
+								<a href="#"><img src="images/rss.png" width="24" height="24" alt="rss" /></a>
+							</li>							<li>
+								<a href="#"><img src="images/fb-like.png" width="86" height="26" alt="facebook-like" /></a>
+							</li>							<li>
+								<a href="#"><img src="images/g-like.png" width="55" height="24" alt="google-like" /></a>
+							</li>						</ul>
+						<form action="#" class="form-search">							<fieldset>							<div class="search-holder">
+								<div class="text"><input type="text" value="" /></div>
+								<input class="btn-search" type="submit" value="Search" />
+							</div>								</fieldset>						</form>
+					</div>
+				</div>
+				<ul id="nav">					<li><a href="#">World news</a></li>					<li><a href="#">Sports</a></li>					<li><a href="#">Tech</a></li>					<li><a href="#">Business</a></li>					<li><a href="#">Movies</a></li>					<li><a href="#">Entertainment</a></li>					<li><a href="#">Culture</a></li>					<li><a href="#">Books</a></li>					<li><a href="#">Classfeids</a></li>					<li><a href="#">Blogs</a></li>				</ul>
+				<div class="media">
+					<div class="picture-slides-container">
+						<div class="frame">
+							<div class="picture-slides-fade-container">
+								<a class="picture-slides-image-link"><img class="picture-slides-image" src="images/1.jpg" alt="This is picture 1" /></a>
+								<div class="picture-slides-image-text">Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus.</div>
+							</div>
+						</div>
+						<ul class="picture-slides-thumbnails">
+							<li><a href="images/1.jpg"><img src="images/1.jpg" width="107" height="67" alt="" /></a></li>
+							<li><a href="images/2.jpg"><img src="images/2.jpg" width="107" height="67" alt="" /></a></li>
+							<li><a href="images/3.jpg"><img src="images/3.jpg" width="107" height="67" alt="" /></a></li>
+							<li><a href="images/4.jpg"><img src="images/4.jpg" width="107" height="67" alt="" /></a></li>
+						</ul>
+						<div class="breakingnews">
+							<a href="#">breakingnews</a>
+						</div>
+					</div>
+					<div class="video">
+						<ul class="list">							<li>
+								<div class="visual">
+									<img src="images/videoscreen.jpg" width="68" height="56" alt="image description" />
+								</div>
+								<div class="description">
+									<a href="#">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
+								</div>
+							</li>							<li>
+								<div class="visual">
+									<img src="images/videoscreen.jpg" width="68" height="56" alt="image description" />
+								</div>
+								<div class="description">
+									<a href="#">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
+								</div>
+							</li>							<li>
+								<div class="visual">
+									<img src="images/videoscreen.jpg" width="68" height="56" alt="image description" />
+								</div>
+								<div class="description">
+									<a href="#">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
+								</div>
+							</li>							<li>
+								<div class="visual">
+									<img src="images/videoscreen.jpg" width="68" height="56" alt="image description" />
+								</div>
+								<div class="description">
+									<a href="#">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
+								</div>
+							</li>						</ul>
+						<div class="bnt-more">
+							<a href="#">more +</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<div id="twocolumns">
+					<div id="content">
+						<div class="worldnews">
+							<div class="title">
+								<h3>From around the world</h3>
+								<div class="bnt-more">
+									<a href="#">more +</a>
+								</div>
+							</div>
+							<ul class="articles">								<li>
+									<div class="visual"><img src="images/pic-1.jpg" width="145" height="100" alt="image description" /></div>
+									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a href="#">Read More</a>
+								</li>								<li>
+									<div class="visual"><img src="images/pic-2.jpg" width="145" height="100" alt="image description" /></div>
+									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a href="#">Read More</a>
+								</li>								<li>
+									<div class="visual"><img src="images/pic-3.jpg" width="145" height="100" alt="image description" /></div>
+									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a href="#">Read More</a>
+								</li>							</ul>
+						</div>
+						<div class="latestnews">
+							<div class="title">
+								<h3>Latest articles</h3>
+								<div class="bnt-more">
+									<a href="#">more +</a>
+								</div>
+							</div>
+							<ul class="articles">								<li>
+									<div class="visual"><img src="images/pic-4.jpg" width="145" height="100" alt="image description" /></div>
+									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a href="#">Read More</a>
+								</li>								<li>
+									<div class="visual"><img src="images/pic-5.jpg" width="145" height="100" alt="image description" /></div>
+									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a href="#">Read More</a>
+								</li>								<li>
+									<div class="visual"><img src="images/pic-6.jpg" width="145" height="100" alt="image description" /></div>
+									<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a href="#">Read More</a>
+								</li>							</ul>
+						</div>
+						<div class="gallerynews">
+							<div class="title">
+								<h3>Gallery</h3>
+								<div class="bnt-more">
+									<a href="#">more +</a>
+								</div>
+							</div>
+							<ul class="pics">								<li><img src="images/pic-7.jpg" width="145" height="100" alt="image description" /></li>								<li><img src="images/pic-8.jpg" width="145" height="100" alt="image description" /></li>								<li><img src="images/pic-9.jpg" width="145" height="100" alt="image description" /></li>								<li><img src="images/pic-10.jpg" width="145" height="100" alt="image description" /></li>								<li><img src="images/pic-11.jpg" width="145" height="100" alt="image description" /></li>								<li><img src="images/pic-12.jpg" width="145" height="100" alt="image description" /></li>							</ul>
+						</div>
+						<div class="technews">
+							<div class="title">
+								<h3>Tech news</h3>
+								<div class="bnt-more">
+									<a href="#">more +</a>
+								</div>
+							</div>
+							<ul class="list">								<li>									<div class="article">
+										<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+										<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+										<ul class="by">
+											<li>by <a href="#">John Doe</a></li>
+											<li>29 comments</li>
+										</ul>
+									</div>								</li>								<li>									<div class="article">
+										<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+										<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+										<ul class="by">
+											<li>by <a href="#">John Doe</a></li>
+											<li>29 comments</li>
+										</ul>
+									</div>								</li>								<li>									<div class="article change">
+										<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+										<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+										<ul class="by">
+											<li>by <a href="#">John Doe</a></li>
+											<li>29 comments</li>
+										</ul>
+									</div>								</li>								<li>									<div class="article change">
+										<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+										<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+										<ul class="by">
+											<li>by <a href="#">John Doe</a></li>
+											<li>29 comments</li>
+										</ul>
+									</div>								</li>							</ul>
+						</div>
+					</div>
+					<div class="aside">
+						<div class="fromdesk">
+							<div class="title">
+								<h3>From the desk</h3>
+							</div>
+							<ul class="articles-list">
+								<li>
+									<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+									<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+									<ul class="read">
+										<li><a href="#">Read more</a></li>
+										<li>3 hours ago</li>
+									</ul>
+								</li>
+								<li>
+									<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+									<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+									<ul class="read">
+										<li><a href="#">Read more</a></li>
+										<li>3 hours ago</li>
+									</ul>
+								</li>
+								<li>
+									<h5>Lorem ipsum dolor sit amet conse ctetur adipiscing elit</h5>
+									<p><a href="#">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ...</a></p>
+									<ul class="read">
+										<li><a href="#">Read more</a></li>
+										<li>3 hours ago</li>
+									</ul>
+								</li>
+							</ul>
+							<div class="bnt-more">
+								<a href="#">more +</a>
+							</div>
+						</div>
+						<div class="editional">
+							<div class="title">
+								<h3>Editional</h3>
+							</div>
+							<ul class="imgs-list">
+								<li>
+									<div class="visual"><img src="images/pic-13.jpg" width="" height="" alt="image description" /></div>
+									<a href="#">Lorem ipsum dolor sit amet con se cte tur adipiscing elit</a>
+								</li>
+								<li>
+									<div class="visual"><img src="images/pic-14.jpg" width="" height="" alt="image description" /></div>
+									<a href="#">Lorem ipsum dolor sit amet con se cte tur adipiscing elit</a>
+								</li>
+								<li>
+									<div class="visual"><img src="images/pic-15.jpg" width="" height="" alt="image description" /></div>
+									<a href="#">Lorem ipsum dolor sit amet con se cte tur adipiscing elit</a>
+								</li>
+								<li>
+									<div class="visual"><img src="images/pic-14.jpg" width="" height="" alt="image description" /></div>
+									<a href="#">Lorem ipsum dolor sit amet con se cte tur adipiscing elit</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="sidebar">
+					<div class="ads">
+						<a href="#"><img src="images/ads.jpg" width="250" height="229" alt="image description" /></a>
+					</div>
+					<form action="#" class="form-newsletter">						<fieldset>							<h3 class="title" >Sign Up for Newsletter</h3>
+							<em class="some-text" >Sign up to receive our free newsletters!</em>
+							<input class="text" type="text" value="Name" />
+							<input class="text" type="text" value="Email Address" />
+							<div class="btn-holder">
+								<input class="btn-submit" type="submit" value="Submit" />
+							</div>
+							<a href="#">We do not spam. We value your privacy!</a>						</fieldset>					</form>
+					<div class="popular">
+						<div class="title">
+							<h3>Popular</h3>
+							<h4>Most read</h4>
+						</div>
+						<ul class="popular-list">
+							<li>
+								<em class="date">Sept 24th 2011</em> 
+								<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a class="readmore" href="#">Read more</a></p>
+							</li>
+							<li>
+								<em class="date">Sept 24th 2011</em> 
+								<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a class="readmore" href="#">Read more</a></p>
+							</li>
+							<li>
+								<em class="date">Sept 24th 2011</em> 
+								<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a class="readmore" href="#">Read more</a></p>
+							</li>
+							<li>
+								<em class="date">Sept 24th 2011</em> 
+								<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a class="readmore" href="#">Read more</a></p>
+							</li>
+							<li>
+								<em class="date">Sept 24th 2011</em> 
+								<p>Lorem ipsum dolor sit amet conse ctetur adipiscing elit <a class="readmore" href="#">Read more</a></p>
+							</li>
+						</ul>
+						<div class="bnt-more">
+							<a href="#">more +</a>
+						</div>
+					</div>
+					<div class="subscribe">
+						<div class="top">
+							<span class="small">save up to</span>
+							<span class="big">50%</span>
+						</div>
+						<a href="#">subscribe&nbsp;&nbsp;&nbsp;now</a>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="ads2">
+					<img src="images/ads2.jpg" width="728" height="90" alt="image description" />
+					<a class="watch" href="#">Watch my story</a>
+				</div>
+				<ul class="nav-footer">					<li><a href="#">World  News</a></li>					<li><a href="#">Sports</a></li>					<li><a href="#">Techology</a></li>					<li><a href="#">Business</a></li>					<li><a href="#">Movies</a></li>					<li><a href="#">Entertainment</a></li>					<li><a href="#">Culture</a></li>					<li><a href="#">Books</a></li>					<li><a href="#">Classifieds</a></li>					<li><a href="#">Blogs</a></li>				</ul>
+				<em class="copyright">Copyright &copy; 2011 <a href="#">The News Reporter Inc</a>. All rights reserved. Theme designed by <a href="#">GraphicsFuel.com </a><br>Reproduction in whole or in part in any form or medium without express written permission of The News Reporter Inc. is prohibited. The trade marks and images used in <br>the design are the copyright of their respective owners. They are used only for display purpose.</em>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
