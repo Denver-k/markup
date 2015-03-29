@@ -1,0 +1,493 @@
+body{
+	margin:0;
+	color:#838383;
+	font:12px/15px Tahoma Helvetica, sans-serif;
+	background:#fff;
+	min-width:1021px;
+}
+img{border-style:none;}
+a{text-decoration:none; color:#00f;}
+a:hover{text-decoration:underline;}
+input,
+textarea,
+select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#000;
+}
+ul{
+	padding:0;	margin:0;	list-style:none;
+}
+input, textarea { outline:none; }
+input:active, textarea:active { outline:none; }
+:focus { outline:none; } 
+form,fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+p{margin:0;}
+q{quotes:none;}
+q:before{content:''}
+q:after{content:''}
+#wrapper{
+	width:1021px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+.logo-holder{overflow:hidden;}
+#header{
+	padding:94px 38px 77px;
+	font-family:"Century Gothic";
+}
+.logo{
+	margin:0;
+	background:url(../images/logo.png) no-repeat;
+	width:268px;
+	height:89px;
+	float:left;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.logo a{
+	display:block;
+	height:100%;
+}
+#header .social-links{
+	float:right;
+	overflow:hidden;
+	padding:20px 0 0;
+}
+#header .social-links em{
+	font-style:normal;
+	display:block;
+	float:left;
+	padding:13px 7px 0 0;
+	font-size:14px;
+	color:#9f9f9f;
+	letter-spacing:3px;
+}
+#header .social-links ul{
+	float:right;
+	overflow:hidden;
+}
+.social-links ul li{
+	float:left;
+	padding:0 0 0 15px;
+}
+.social-links li a{display:block;}
+.social-links img{vertical-align:top;}
+.nav-holder{
+	overflow:hidden;
+	background:url(../images/separator.gif) no-repeat 0 100%;
+	width:1020px;
+	margin:0 0 0 -41px;
+	padding:36px 0 13px 40px;
+}
+#nav{
+	float:left;
+	overflow:hidden;
+	font-size:18px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+#nav li{
+	float:left;
+	padding:0 38px 0 0;
+}
+#nav li a{color:#838383;}
+#nav li a:hover{color:#2a292c;}
+.search-form{
+	float:right;
+	width:195px;
+	border:1px solid #ededed;
+	height:31px;
+	margin:-9px 78px 0 0;
+}
+.search-form .search-holder{
+	border:1px solid #f9f9f9;
+	overflow:hidden;
+	padding:7px 7px 0 5px;
+	height:22px;
+}
+.search-form .text{
+	float:left;
+	border:none;
+	width:160px;
+	font:12px/12px Tahoma;
+	color:#9f9f9f;
+	background:none;
+	margin:0;
+	padding:0;
+	background:#fff;
+}
+.search-form .text:focus{
+	font:12px/12px Tahoma;
+	color:#9f9f9f;
+	border:none;
+}
+.search-form .btn-search{
+	float:right;
+	width:14px;
+	height:14px;
+	background:url(../images/search.gif) no-repeat;
+	border:none;
+	cursor:pointer;
+}
+#main{
+	padding:0 38px 133px;
+	background:url(../images/separator.gif) no-repeat 0 100%;
+}
+.slider-holder{
+	background:url(../images/border-dotted.gif) repeat-x;
+	font-family:"Century Gothic";
+	color:#838383;
+	padding:20px 0 0;
+}
+.slider-holder h2{
+	font-weight:normal;
+	font-size:24px;
+	text-transform:uppercase;
+	margin:0 0 31px;
+	display:block;
+	background:url(../images/border-dotted.gif)0 100% repeat-x;
+	padding:23px 0 23px;
+	letter-spacing:5px;
+}
+.slider-holder h3{
+	font-weight:normal;
+	font-size:11px;
+	text-transform:uppercase;
+	margin:0;
+	display:block;
+	padding:0 0 36px;
+	letter-spacing:2px;
+}
+.slider-holder .slider{
+	overflow:hidden;
+	background:url(../images/border-solid.gif) 0 100% repeat-x;
+	padding:0 0 41px;
+}
+.slider-holder .slider .jcarousel{
+	float:left;
+	position:relative;
+	overflow:hidden;
+	height:467px;
+	width:700px;
+}
+.slider .jcarousel ul{
+	position:relative;
+	width:20000em;
+}
+.slider .jcarousel li{float:left;}
+.slider .jcarousel-main{
+	float:right;
+	width:225px;
+	overflow:hidden;
+	padding:18px 0 0;
+}
+.slider .jcarousel-main ul{
+	padding:0 0 65px;
+	overflow:hidden;
+}
+.slider .jcarousel-main li{
+	float:left;
+	margin:0 18px 0 0;
+}
+.slider ul a{
+	display:block;
+	width:55px;
+	height:55px;
+	overflow:hidden;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+.slider .like{background:url(../images/like-dlike.png) no-repeat;}
+.slider .like:hover{background-position:0 100%;}
+.slider .dont-like{background:url(../images/like-dlike.png) 100% 0 no-repeat;}
+.slider .dont-like:hover{background-position:100% 100%;}
+.slider .jcarousel-content{min-height:300px;}
+.slider .jcarousel-content h4{
+	font-weight:normal;
+	text-transform:uppercase;
+	font:12px "Century Gothic";
+	color:#838383;
+	display:block;
+	padding:0 0 9px;
+	margin:0;
+	letter-spacing:2px;
+}
+.slider .jcarousel-content em{
+	font-style:normal;
+	display:block;
+	padding:0 0 8px 0;
+	letter-spacing:-1px;
+}
+.slider .jcarousel-content a{color:#545454;}
+.slider .control-panel{
+	padding:0 3px 0 6px;
+	overflow:hidden;
+}
+.slider .control-panel em{
+	display:block;
+	width:25px;
+	height:25px;
+	background:url(../images/prev-next.png) no-repeat;
+	float:left;
+}
+.slider .control-panel a{
+	display:block;
+	height:100%;
+}
+.slider .control-panel em:hover{background:url(../images/prev-next.png)0 100% no-repeat;}
+.slider .control-panel strong{
+	font-weight:
+	display:block;
+	width:25px;
+	height:25px;
+	background:url(../images/prev-next.png) 100% 0 no-repeat;
+	float:right;
+}
+.slider .control-panel strong:hover{background:url(../images/prev-next.png) 100% 100% no-repeat;}
+.inspired{
+	padding:33px 0 10px;
+	background:url(../images/border-dotted.gif) 0 100% repeat-x;
+}
+.inspired h2{
+	font-weight:normal;
+	font:24px/24px "Century Gothic";
+	text-transform:uppercase;
+	margin:0 0 31px;
+	display:block;
+	background:url(../images/border-dotted.gif)0 100% repeat-x;
+	padding:0 0 18px;
+	letter-spacing:5px;
+}
+.inspired strong{
+	font-weight:normal;
+	text-transform:none;
+}
+.inspired em{
+	text-transform:none;
+	font-style:normal;
+	font-size:14px;
+	vertical-align:top;
+	line-height:14px;
+	letter-spacing:3px;
+}
+.inspired h3{
+	font-weight:normal;
+	font:11px/17px "Century Gothic";
+	text-transform:uppercase;
+	margin:0;
+	display:block;
+	padding:0 0 36px;
+	letter-spacing:2px;
+}
+.gallery{overflow:hidden;}
+.gallery li{
+	float:left;
+	width:450px;
+	padding:0 20px 30px 0;
+}
+.gallery .visual{
+	float:left;
+	margin:0 18px 0 0;
+}
+.gallery .visual img{vertical-align:top;}
+.gallery .visual a{display:block;}
+.gallery .description{overflow:hidden;}
+.gallery .description h5{
+	margin:0 0 10px 0;
+	display:block;
+	font-weight:normal;
+	font-size:12px;
+	color:#545454;
+}
+.gallery .description a{color:#838383;}
+.bottom{
+	padding:41px 0 0;
+	overflow:hidden;
+}
+.bottom .ceremony{
+	float:left;
+	width:463px;
+	position:relative;
+}
+.bottom .ceremony h2{
+	display:block;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin:0 0 27px 0;
+	font:24px/24px "Century Gothic";
+	letter-spacing:5px;
+}
+.bottom .ceremony a{
+	color:#9f9f9f;
+	text-decoration:underline;
+	position:absolute;
+	top:67px;
+	right:56px;
+}
+.bottom .ceremony a:hover{text-decoration:none;}
+.bottom .ceremony .visual{padding:21px 0 0;}
+.ceremony .visual img{vertical-align:top;}
+.share-holder{
+	overflow:hidden;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.share-holder .share{
+	float:left;
+	width:120px;
+	height:52px;
+	background:url(../images/share.png) no-repeat;
+	cursor:pointer;
+}
+.share-holder.active .share{background:url(../images/share-hover.png) no-repeat;}
+.share-holder .social-links{
+	background:url(../images/bg-social.png) repeat-x;
+	margin:0;
+	list-style:none;
+	float:left;
+	padding:7px 15px 7px 0;
+	display:none;
+}
+.share-holder.active .social-links{display:block;}
+.share-holder .social-links li{
+	float:left;
+	padding:0 0 0 10px;
+}
+.share-holder .social-links a{position:static;}
+.bottom .invitation{
+	float:right;
+	width:465px;
+	position:relative;
+	padding:0 0 112px;
+}
+.bottom .invitation h2{
+	display:block;
+	font-weight:normal;
+	text-transform:uppercase;
+	margin:0 0 27px 0;
+	font:24px/24px "Century Gothic";
+	letter-spacing:5px;
+}
+.bottom .invitation .invite-form{padding:20px 0 0;}
+.invitation .invite-form .text{
+	width:448px;
+	height:23px;
+	border:1px solid #e8e8e8;
+	margin:0 0 10px 0;
+	padding:16px 0 9px 10px;
+}
+.invite-form .text input{
+	border:none;
+	padding:0;
+	width:400px;
+	font:12px/12px Arial, Helvetica, sans-serif;
+	color:#9f9f9f;
+	margin:0;
+	background:none;
+}
+.invite-form .btn-submit{
+	background:url(../images/btn-form.png) no-repeat;
+	width:131px;
+	height:29px;
+	border:none;
+	font:14px/14px "Century Gothic";
+	color:#bebebe;
+	margin:13px 0 0;
+	letter-spacing:2px;
+	padding:0;
+	cursor:pointer;
+}
+.invite-form .btn-submit:hover{background:url(../images/btn-form-hover.png) no-repeat;}
+.bottom .invitation a{
+	color:#9f9f9f;
+	text-decoration:underline;
+	position:absolute;
+	bottom:0px;
+	left:0;
+}
+.bottom .invitation a:hover{text-decoration:none;}
+.bottom .invitation .logo-2{
+	position:absolute;
+	right:0;
+	bottom:36px;
+}
+.seporator{
+	position:absolute;
+	left:-40px;
+	bottom:0;
+}
+#footer{
+	padding:55px 0 20px;
+	letter-spacing:3px;
+}
+#footer .links{
+	padding:0 0 105px;
+	overflow:hidden;
+}
+#footer h3{
+	font-weight:normal;
+	text-transform:uppercase;
+	font-size:18px;
+	background:url(../images/border-dotted.gif) 0 100% repeat-x;
+	padding:0 0 21px;
+	margin:0 0 40px;
+}
+#footer a{
+	text-decoration:none;
+	color:#838383;
+	text-transform:uppercase;
+}
+#footer a:hover{text-decoration:underline;}
+.nav-footer{
+	float:left;
+	width:303px;
+	padding:0 17px 0 0;
+}
+.nav-footer li{
+	display:block;
+	padding:0 0 3px;
+}
+.contacts{
+	float:left;
+	width:303px;
+	padding:0 17px 0 0;
+}
+.contacts ul{padding:0 0 18px;}
+.contacts li{
+	display:block;
+	padding:0 0 3px;
+}
+.contacts address{
+	font-style:normal;
+	text-transform:uppercase;
+}
+.share-social{
+	float:left;
+	width:295px;
+}
+.share-social li{
+	float:left;
+	padding:0 15px 20px 0;
+}
+.share-social ul{
+	padding:0 0 8px;
+	overflow:hidden;
+}
+.share-social em{
+	font-style:normal;
+	text-transform:uppercase;
+}
+.copyright{
+	font-style:normal;
+	text-transform:uppercase;
+	color:#9f9f9f;
+	display:block;
+}
+.copyright a{color:#9f9f9f;}
